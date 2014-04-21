@@ -1,3 +1,8 @@
+"basic commands"
+git add file_or_dir_path/
+git rm file_or_dir_path/
+git mv file_or_dir_path/
+
 "Removing multiple files from a Git repo that have already been deleted from disk"
 # git status should show changes not being update.
 # This tells git to automatically stage tracked files -- including deleting the previously tracked files.
