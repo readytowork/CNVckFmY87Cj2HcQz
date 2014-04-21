@@ -1,0 +1,14 @@
+"Removing multiple files from a Git repo that have already been deleted from disk"
+# git status should show changes not being update.
+# This tells git to automatically stage tracked files -- including deleting the previously tracked files.
+
+git status 
+git add -u .
+
+" Reset and sync local respository with remote branch"
+#  This command will destroy any local changes in your current branch.
+#  You may replace origin and master with the remote and branch that you want to synchronize with.
+
+git fetch origin
+git reset --hard origin/master
+git clean -f -d
